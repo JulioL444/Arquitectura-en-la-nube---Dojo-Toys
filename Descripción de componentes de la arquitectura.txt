@@ -1,0 +1,15 @@
+Diagrama de arquitectura de red detallado para la solución en la nube de Microsoft Azure diseñada para DOJO Toys.
+1.	Usuarios de DOJO Toys: Conectados a través de Internet, protegidos por un firewall antes de acceder a los servicios a través de HTTPS.
+2.	Azure Virtual Network: Encapsula todos los servicios en la nube.
+3.	Load Balancer (LB): Distribuye el tráfico a varios servidores de aplicaciones.
+4.	Servidores de Aplicaciones y Workers: Alojados en máquinas virtuales para procesar las cargas de trabajo.
+5.	Azure SQL Servers: Almacena datos de juegos.
+6.	Azure API Management: Gestiona las APIs que se comunican con las bases de datos y otros servicios.
+7.	Azure Bastion: Proporciona acceso seguro a través de RDP/SSH a las VMs.
+8.	Redis Cache: Ofrece almacenamiento en caché para mejorar el rendimiento.
+9.	Azure Container Registry (ACR): Repositorio para imágenes de Docker que se utilizan en el despliegue de contenedores.
+10.	Azure Kubernetes Service (AKS): Orquesta contenedores para las aplicaciones.
+11.	Azure Ingress Controller: Gestiona el tráfico de red entrante a los servicios en AKS.
+12.	Azure Service Bus y Logic Apps: Facilita la integración y automatización de procesos empresariales.
+13.	Azure Active Directory: Gestiona identidades y accesos.
+14.	Azure CNI y Pod Identity: Proporcionan integración de red y gestión de identidades para contenedores en AKS.
